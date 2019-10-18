@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Tweet</th>
+  </tr>
+      <% @tweets.each do |s| %>
+  <tr>
+    <td>
+      <%= s.tweet %>
+      <%= link_to 'show', tweet_path(s)%>
+      <%= link_to 'Delete', tweet_path(s), method: :delete, data: {confirm: "are you sure?"}%>
+    </td>
+  </tr>
+  <% end %>
+</table>

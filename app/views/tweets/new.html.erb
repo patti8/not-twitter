@@ -1,0 +1,12 @@
+<h1>New Tweet</h1>
+<div class="ui form">
+<div class="field">
+  <%= form_for(@tweet)  do |f| %>
+  <label>Tweet</label>
+    <%= f.label :tweet%>
+    <%= f.text_area :tweet %>
+    <%= f.submit %>
+
+  <% end %>
+</div>
+</div>
